@@ -42,7 +42,7 @@ async function nextCV() {
     // console.log(currentCandidate)
     image.src = currentCandidate['picture']['large'];
     name.innerText = currentCandidate['name']['title'] + " " + currentCandidate['name']['first'] + " " + currentCandidate['name']['last'];
-    dob.innerHTML = 'DOB: ' + currentCandidate.dob.date.slice(0, 13) + '<br>' + 'Age: ' + currentCandidate.dob.age;
+    dob.innerHTML = 'DOB: ' + currentCandidate.dob.date.slice(0, 10) + '<br>' + 'Age: ' + currentCandidate.dob.age;
     list.innerHTML = `<li class="list-group-item">Phone: ${currentCandidate.phone}</li>
                 <li class="list-group-item">E-mail: ${currentCandidate.email}</li>
                 <li class="list-group-item">ID: ${currentCandidate.id.value}</li>`
